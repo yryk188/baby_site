@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>我们的宝宝</title>
+  <style>
+    body { font-family: 'Arial', sans-serif; background: #fff8f0; color: #333; margin: 0; padding: 0; display: none; }
+    header { background-color: #ffb6c1; padding: 20px; text-align: center; }
+    h1 { margin: 0; }
+    .content { padding: 20px; }
+    .photo { width: 100%; max-width: 600px; border-radius: 10px; margin: 10px 0; }
+    footer { text-align: center; padding: 10px; background: #f3e5f5; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>欢迎来到宝宝的世界</h1>
+    <p>出生日期：2025年3月14日 ｜ 星座：双鱼座</p>
+  </header>
+  <div class="content">
+    <h2>成长日记</h2>
+    <p><strong>2025-07-20：</strong> 今天宝宝第一次翻身啦！太惊喜了 🥹</p>
+    <img src="baby-photo.jpg" alt="宝宝照片" class="photo">
+  </div>
+  <footer>
+    爸爸妈妈爱你 ❤️ ｜ 版权所有 © 2025
+  </footer>
+
+  <script>
+    const password = prompt("请输入访问密码：");
+    const correctPassword = "xiaoman";  // ← 你可以改成自己的密码
+    if (password === correctPassword) {
+      document.body.style.display = "block";
+    } else {
+      document.body.innerHTML = "<h1 style='text-align:center;margin-top:100px;'>访问被拒绝</h1>";
+    }
+  </script>
+</body>
+</html>
